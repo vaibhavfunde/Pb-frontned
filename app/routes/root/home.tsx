@@ -72,7 +72,7 @@ import { FeaturesSection } from '@/components/landing/sections/FeaturesSection';
 
 const Homepage = () => {
   return (
-    <div className="h-full bg-white min-w-0">
+    <div className="h-full bg-white w-full">
        <div className=''>
        <HeroSection />
        </div>
