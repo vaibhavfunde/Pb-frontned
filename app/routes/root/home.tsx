@@ -69,6 +69,7 @@ import { FooterSection } from "@/components/landing/sections/FooterSection";
 import { ContactSection } from '@/components/landing/sections/ContactSection';
 import { AboutSection } from '@/components/landing/sections/AboutSection';
 import { FeaturesSection } from '@/components/landing/sections/FeaturesSection';
+import { PricingSection } from '@/components/landing/sections/PricingSection';
 
 const Homepage = () => {
   return (
@@ -81,6 +82,7 @@ const Homepage = () => {
      
       <FeaturesSection />
       <AboutSection />
+        <PricingSection />
       {/* <CTASection /> */}
       <CTASection />
       {/* <ContactSection /> */}

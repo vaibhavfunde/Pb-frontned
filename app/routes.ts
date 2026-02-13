@@ -30,7 +30,7 @@ export default [
          route("members", "routes/dashboard/members.tsx"),
          route("settings", "routes/dashboard/setting/UserSettings.tsx"),
 
-    
+         route("payment", "routes/dashboard/Payment/PricingSection.tsx"),
 
       ]),
 

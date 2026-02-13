@@ -5,6 +5,7 @@ import {
   CheckCircle2,
   ChevronsLeft,
   ChevronsRight,
+  CreditCard,
   LayoutDashboard,
   ListCheck, 
   LogOut,
@@ -47,11 +48,17 @@ export const SidebarComponent = ({
       href: `/members`,
       icon: Users,
     },
+    // {
+    //   title: "Achieved",
+    //   href: `/achieved`,
+    //   icon: CheckCircle2,
+    // },
     {
-      title: "Achieved",
-      href: `/achieved`,
-      icon: CheckCircle2,
+      title: "Payment",
+      href: `/payment`,
+      icon: CreditCard ,
     },
+    
     {
       title: "Settings",
       href: "/settings",
