@@ -213,6 +213,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import axios from "axios";
+import { startPayment } from "../../../hooks/payment";
+
+
 
 import { Loader2 } from "lucide-react";
 import { useUserProfileQuery } from "../../../hooks/use-user";
@@ -307,12 +310,12 @@ export default function PricingSection() {
     let order;
 
     try {
-      const amount =
-        plan.name === "Pro" ? 499 :
-        plan.name === "Enterprise" ? 1000 : 1;
+      const amount = 1
+        // plan.name === "Pro" ? 499 :
+        // plan.name === "Enterprise" ? 1000 : 1;
 
       const orderResponse = await axios.post(
-        "http://localhost:5001/create-order",
+        `${import.meta.env.VITE_API_URL}/users/create-order`,
         { amount }
       );
 
@@ -335,7 +338,7 @@ export default function PricingSection() {
       handler: async function (response: any) {
         try {
           const verifyResponse = await axios.post(
-            "http://localhost:5001/verify-payment",
+          `  ${import.meta.env.VITE_API_URL}/users/verify-payment`,
             response
           );
 
