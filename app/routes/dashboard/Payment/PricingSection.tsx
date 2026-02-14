@@ -921,7 +921,7 @@ export default function PricingSection() {
   const { data: user, isPending: isLoadingUser, refetch } =
     useUserProfileQuery();
 
-  const [paymentSuccess, setPaymentSuccess] = useState(true);
+  const [paymentSuccess, setPaymentSuccess] = useState(false);
   const token = localStorage.getItem("token");
 
   // ✅ Subscription validity
